@@ -1,0 +1,133 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* menu */
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    background-color: gold;
+    /* flex-grow: 1; */
+    width: 25%;
+    transition: 0.5s;
+}
+
+.menu-item:hover {
+    background-color: crimson;
+    /* flex-grow: 1.5; */
+    width: 35%;
+}
+
+.menu-link {
+    display: block;
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.menu-link:hover {
+    color: white;
+}
+
+/* search */
+/* body {
+    background-color: gray;
+} */
+
+.search-form {
+    height: 40px;
+    display: flex;       
+}
+
+.search-form input[type="search"] {
+    margin-right: 10px;
+    flex: 1;
+    font-size: 1rem;
+    /* border: 0; */
+    border-radius: 0.3em;
+}
+
+.search-form input[type="submit"] {
+    width: 4em;
+    font-size: 1rem;
+    background-color: gold;
+    border-radius: 0.3em;
+}
+
+/* bullet-list */
+.info-list {
+    margin-bottom: 2rem;
+}
+
+.info-list-item {
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.info-list-item:before {
+    content: "🔅🔆";
+    margin-right: 0.5em;
+}
+
+/* message */
+.user-item {
+    margin-bottom: 1.5em;
+    display: flex;
+
+}
+
+.user-photo {
+    margin-right: 0.5em;
+    flex-shrink: 0;
+    /* 브라우저가 작아져도 flex 아이템을 줄어들지 않도록 위함 */
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 150%;
+}
+
+/* 텍스트 축약 효과 css 세튼 */
+.user-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.friend-item {
+    align-items: center;
+
+}
+
+/* modal - 팝업창 만들기 */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dialog {
+    padding: 2em;
+    width: 50vw;
+    /* vw : 보여지는 브라우저 창 사이즈(폭)의 절반 */
+    border-radius: 1em;
+    background-color: #fff;
+}
+
+/*  */

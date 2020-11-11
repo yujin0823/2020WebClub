@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper {
+    
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+#header {
+    text-align: center;
+}
+
+#header .avatar {
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1ps solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.25);
+    margin-top: 2em;
+    
+}
+
+#header .avatar img {
+    border-radius: 100%;
+    display: block;
+}
+
+#header h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.5rem;
+}
+
+#header h1 strong {
+   color: white;
+   font-weight: 200;
+    
+}
+
+#header h1 a {
+    color: rgba(255,255,255,0.5);
+    border-bottom: 1px dotted rgba(255,255,255,0.5);
+}
+
+#header ul.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header ul.icons  li {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 2.5em;
+}
+
+#header ul.icons li .label {
+    display: none;
+}
+
+#header ul.icons li  a {
+    color: rgba(255,255,255,0.5);
+}
+
+#main {
+    margin-top: 3em;
+}
+
+#main .thumnails {
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+}
+
+#main .thumnails > div {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+#main .thumnails img {
+    width: 100%;
+    /* height: ; */
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+#main .thumnails h3 {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: block;
+    /* 
+        img 태그는 inlilne요소이므로 line-height를 가진다. 
+        이를 없애기 위해 diplay block처리
+    */
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 200;
+    font-size: 0.8rem;
+    background: rgba(255,255,255,0.2);
+}
+
+#main .thumnails a {
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+#main .thumnails a:hover {
+    border: 1px solid rgba(255, 74, 74, 0.795);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    font-size: 0.8em;
+    padding-bottom: 3rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+    font-size: 15px;
+}
+
+/* @media(min-width: 480px) {
+    #main .thumnails {
+        flex-direction: column;
+    }
+} */

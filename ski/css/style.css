@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+    color: black;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+}
+
+header > div {
+	float: left;
+}
+
+.logo {
+	margin: 30px 0 0 40px;
+	width: 200px;
+	height: 50px;
+}
+
+.logo > img {
+	width: 100px;
+	height: 50px;
+}
+
+.menu {
+	position: relative;
+	margin-top: 65px;
+	width: 700px;
+	z-index: 1;
+}
+
+.menu ul li {
+	width: 200px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+}
+
+.menu ul li a {
+	display: block;
+	color: black;
+	font-weight: bold;
+}
+
+.menu > ul > li {
+	background-color: #70ffe2;
+}
+
+.menu > ul > li:hover {
+	background-color: #b8ceff;
+}
+
+.menu > ul > li > ul > li {
+	background-color: #c2e1ff;
+}
+
+.menu > ul > li > ul > li:hover {
+	background-color: #b8ceff;
+}
+
+/* visual */
+
+#visual {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	z-index: -1;
+}
+
+#visual > img {
+	width: 100%;
+	height: 100%;
+}
+
+.info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 150px;
+	background-color: #fffbb8;
+	color: purple;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 35px;
+}
+
+/* contents */
+
+#contents {
+	width: 100%;
+	height: 400px;
+}
+
+#contents > article {
+    float: left;
+    margin-top: 20px;
+}
+
+#contents > article > h1 {
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.notice {
+    width: 320px;
+}
+
+.Best_Photo {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.Best_Photo > img {
+    margin: 20px 30px 0 20px;
+}
+
+.sns {
+    width: 280px;
+    margin-left: 30px;
+}
+
+.sns > p {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.sns > ul > .menu1 {
+    margin-top: 5px;
+   text-align: center;
+}
+
+/* footer */
+
+footer {
+	width: 100%;
+	height: 150px;
+	background-color: #a1e0ff;
+}
+
+.text {
+	padding: 10px;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	line-height: 40px;
+}

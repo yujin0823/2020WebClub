@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: #666;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrapper {
+/*
+    background: url("../images/fruits.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+*/
+   
+    width: 1200px;
+/*    height: 1200px;*/
+    margin: 0 auto;
+    
+    font-family: 'Montserrat', sans-serif, '맑은 고딕';
+    position: relative;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headA {
+    display: inline-block;
+    background-color:  #5D9AB2;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.headB ul {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+   
+}
+
+.headB a {
+    display: block;
+    padding: 15px;
+    font-size: 12px;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.headB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.conA {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/fruits.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.conA .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    height: 60vh;
+}
+
+.container > h1 {
+    font-size: 6em;
+    color: #fff;
+}
+
+.container > p {
+    font-size: 2em;
+    color: #fff;
+}
+
+.container > a {
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 20px;
+    border: 3px solid currentColor;
+    border-radius: 6px;
+    background-color: #BF6A7A;
+    padding: 10px 30px;
+}
+
+.conB {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.conB .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conB .container .text {
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.conB .container img {
+    border-radius: 50px;
+}
+
+.conC {
+    background-color: #5D9AB2;
+}
+
+.conC .container, .conD .container {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conC .text, .conD .text {
+    padding: 20px;
+    /* flex-basis: 800px; */
+}
+
+.conC h2, .conD h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.conC p, .conD p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    line-height: 20px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.conC a, .conD a {
+    margin-top: 20px;
+    border: 3px solid currentColor;
+    padding: 10px 30px;
+    background-color: #BF6A7A;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.conC a:hover, .conD a:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.conD {
+    background-color: #b25da4;
+}
+
+.conD .container {
+    /* height: 300px;
+    display: flex; */
+    flex-direction: row-reverse;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2b5566;
+    /* color: #fff; */
+}
+
+footer > div {
+    margin-top: 10px;
+}
+
+.footA h2, .footB h3, .footC h3 {
+    font-size: 30px;
+    letter-spacing: 0.2cm;
+    color: #fff;
+}
+
+.footA p, .footA a, .footB a, .footC a {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: white;
+    height: 20vh;
+}

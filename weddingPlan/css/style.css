@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    height: 1200px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+header {
+    height: 200px;
+    position: relative;
+}
+
+#mainImage {
+    height: 400px;
+    position: relative;
+}
+
+#contents {
+    margin-top: 20px;
+    height: 500px;
+    position: relative;
+}
+
+footer {
+    width: 1000px;
+    height: 150px;
+    padding-top: 5px;
+    background-color: #939;
+    position: relative;
+    color: #ffffff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+  
+.logo_box {
+    width: 100px;
+    height: 50px;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 450px;
+    right: 0;
+    background-color: #939;
+    color: #fff;
+}
+
+.menu li {
+    width: 150px;
+    height: 35px;
+    line-height: 35px;   /* 서브메뉴가 높이 35px의 중앙에 위치하기 위해 */
+  
+    float:left;     /*옆으로 배치 */
+    text-align:center;
+    font-weight: bold;
+    font-size: 15px;
+    
+    position: relative;
+}
+
+.menu > li > a { 
+    display: block;    /*a를 박스(block)처리*/
+    line-height: 35px;
+}
+
+.menu > ul > li > ul > li {
+    background-color: #e3aeea;
+    color: #6d6b69;             
+    z-index:1; 
+    /*지정된 header 높이를 벗어나 이미지 슬라이드 영역을 침범하여 서브 메뉴를 보이게 하기 위함*/
+}
+
+.menu > li > ul > a {
+    line-height: 35px;
+    display: block;
+    text-align: center;
+}
+
+#imgslide {
+	height: 350px;
+}
+
+.imgs {
+	position: relative;
+	overflow: hidden;
+	height: 350px
+}
+
+
+#imageslide .information{
+    position: absolute;
+    background-color: rgba(255,255,255,0.2);
+    width:283px;
+    height:50px;
+    line-height: 50px;
+    font-size:30px;
+    color: #6d6b69;
+    text-align: center;
+    top:0;
+    left:40%;
+    z-index:1;
+}
+
+#slides {
+	width: 1000px;
+	height: 300px;
+}
+
+#slides li {
+	display: none;
+}
+
+#slides li:first-child {
+	display: block;
+}
+
+.notice{
+    width:500px;
+    float:left;
+}
+
+h2 {
+   text-align: center;
+   padding-bottom:10px;
+   border-bottom:1px solid #666;
+}
+
+table {
+    width: 500px;
+    color:#666666;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table tr>td{
+    padding:5px;
+}
+
+table tr:nth-child(2n){
+    background-color:#D1B59D  ;
+}
+
+.partner{
+    position: absolute;
+    right: 20px;
+    width: 400px;
+}
+
+.partner img {
+    margin-left: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icons {
+    clear: both;
+    width: 1000px;
+    margin-top: 300px;
+    position: absolute;
+    text-align: center;
+}
+
+.icons > images  {
+      margin-top: 30px;
+}
+
+.imgbtn {
+    width:160px; 
+    margin:0 20px; 
+    display:inline-block;     
+}
+
+.imgbtn button{
+    padding: 10px;
+    background-color: #D1B59D;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button {
+    cursor:pointer;
+}
+
+.imgbtn > button:hover {
+    background-color: #939;
+}
+
+.left {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+
+.right {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
